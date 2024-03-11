@@ -4,13 +4,14 @@ import sys
 from zipfile import ZipFile
 from urllib.request import urlretrieve
 
-
+# print(os.getcwd() + '\Lesson 12')
 # ========================-Downloading Assets-========================
 def download_and_unzip(url, save_path):
     print(f"Downloading and extracting assests....", end="")
 
     # Downloading zip file using urllib package.
     urlretrieve(url, save_path)
+    print(save_path)
 
     try:
         # Extracting zip file using the zipfile package.
